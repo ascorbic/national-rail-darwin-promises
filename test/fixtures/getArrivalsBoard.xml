@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetArrivalBoardResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+            <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types"
+                xmlns:lt8="http://thalesgroup.com/RTTI/2021-11-01/ldb/types"
+                xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+                xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types"
+                xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+                xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types"
+                xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+                xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                <lt4:generatedAt>2023-12-08T07:28:55.0894432+00:00</lt4:generatedAt>
+                <lt4:locationName>London Paddington</lt4:locationName>
+                <lt4:crs>PAD</lt4:crs>
+                <lt4:nrccMessages>
+                    <lt:message>Major disruption to / from London Paddington due to a damage to the overhead electric wires. Trains may be cancelled or severely delayed by at least 90 minutes. More details can be found in &lt;a href="https://www.nationalrail.co.uk/service-disruptions/london-paddington-20231207/"&gt;Latest Travel News. &lt;/a&gt;</lt:message>
+                    <lt:message>
+    Due to heavy rain flooding the railway between Plymouth and Exeter St Davids trains may be cancelled, delayed or revised. More details can be found in &lt;a href="https://www.nationalrail.co.uk/service-disruptions/totnes-20231208/"&gt;Latest Travel News&lt;/a&gt;.</lt:message>
+                </lt4:nrccMessages>
+                <lt4:platformAvailable>true</lt4:platformAvailable>
+                <lt7:trainServices>
+                    <lt7:service>
+                        <lt4:sta>07:09</lt4:sta>
+                        <lt4:eta>Delayed</lt4:eta>
+                        <lt4:platform>4</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:delayReason>This train has been delayed by damage to the overhead electric wires</lt4:delayReason>
+                        <lt4:serviceID>2390333PADTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bedwyn</lt4:locationName>
+                                <lt4:crs>BDW</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:21</lt4:sta>
+                        <lt4:eta>Delayed</lt4:eta>
+                        <lt4:platform>10</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:delayReason>This train has been delayed by damage to the overhead electric wires</lt4:delayReason>
+                        <lt4:serviceID>2390637PADTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Didcot Parkway</lt4:locationName>
+                                <lt4:crs>DID</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:23</lt4:sta>
+                        <lt4:eta>07:34</lt4:eta>
+                        <lt4:platform>A</lt4:platform>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:delayReason>This train has been delayed by damage to the overhead electric wires</lt4:delayReason>
+                        <lt4:serviceID>2382044PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Heathrow Airport T5</lt4:locationName>
+                                <lt4:crs>HWV</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Shenfield</lt4:locationName>
+                                <lt4:crs>SNF</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:24</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of industrial action</lt4:cancelReason>
+                        <lt4:serviceID>2390572PADTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Worcester Shrub Hill</lt4:locationName>
+                                <lt4:crs>WOS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:26</lt4:sta>
+                        <lt4:eta>07:36</lt4:eta>
+                        <lt4:platform>8</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:delayReason>This train has been delayed by damage to the overhead electric wires</lt4:delayReason>
+                        <lt4:serviceID>2389781PADTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:26</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of damage to the overhead electric wires</lt4:cancelReason>
+                        <lt4:serviceID>2381825PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Maidenhead</lt4:locationName>
+                                <lt4:crs>MAI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Abbey Wood</lt4:locationName>
+                                <lt4:crs>ABW</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:29</lt4:sta>
+                        <lt4:eta>Delayed</lt4:eta>
+                        <lt4:platform>B</lt4:platform>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2381287PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Abbey Wood</lt4:locationName>
+                                <lt4:crs>ABW</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Reading</lt4:locationName>
+                                <lt4:crs>RDG</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:32</lt4:sta>
+                        <lt4:eta>On time</lt4:eta>
+                        <lt4:platform>A</lt4:platform>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2381831PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Heathrow Airport T4</lt4:locationName>
+                                <lt4:crs>HAF</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Abbey Wood</lt4:locationName>
+                                <lt4:crs>ABW</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:32</lt4:sta>
+                        <lt4:eta>On time</lt4:eta>
+                        <lt4:platform>B</lt4:platform>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2381540PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Shenfield</lt4:locationName>
+                                <lt4:crs>SNF</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:33</lt4:sta>
+                        <lt4:eta>Delayed</lt4:eta>
+                        <lt4:platform>7</lt4:platform>
+                        <lt4:operator>Heathrow Express</lt4:operator>
+                        <lt4:operatorCode>HX</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2388641PADTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Heathrow Airport T5</lt4:locationName>
+                                <lt4:crs>HWV</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:35</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of damage to the overhead electric wires</lt4:cancelReason>
+                        <lt4:serviceID>2381546PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Abbey Wood</lt4:locationName>
+                                <lt4:crs>ABW</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Heathrow Airport T4</lt4:locationName>
+                                <lt4:crs>HAF</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:37</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of industrial action</lt4:cancelReason>
+                        <lt4:serviceID>2390401PADTON__</lt4:serviceID>
+                        <lt5:rsid>GW140000</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:38</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of damage to the overhead electric wires</lt4:cancelReason>
+                        <lt4:serviceID>2381837PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Reading</lt4:locationName>
+                                <lt4:crs>RDG</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Abbey Wood</lt4:locationName>
+                                <lt4:crs>ABW</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:38</lt4:sta>
+                        <lt4:eta>On time</lt4:eta>
+                        <lt4:platform>B</lt4:platform>
+                        <lt4:operator>Elizabeth Line</lt4:operator>
+                        <lt4:operatorCode>XR</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2382455PADTLL__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Shenfield</lt4:locationName>
+                                <lt4:crs>SNF</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:39</lt4:sta>
+                        <lt4:eta>Delayed</lt4:eta>
+                        <lt4:platform>11</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:delayReason>This train has been delayed by damage to the overhead electric wires</lt4:delayReason>
+                        <lt4:serviceID>2390552PADTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Oxford</lt4:locationName>
+                                <lt4:crs>OXF</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                </lt7:trainServices>
+            </GetStationBoardResult>
+        </GetArrivalBoardResponse>
+    </soap:Body>
+</soap:Envelope>
