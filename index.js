@@ -4,7 +4,7 @@ const requestBuilder = require('./requestBuilder');
 const Parsers = require('./parsers');
 
 class Darwin {
-  constructor(apiKey, options) {
+  constructor(apiKey, options = {}) {
     this.key = apiKey || process.env.DARWIN_TOKEN;
     this.baseUrl = 'https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx';
 
@@ -19,7 +19,8 @@ class Darwin {
 
   static get(url) {
     return new Promise((resolve, reject) => {
-      axios.get(url)
+      axios
+        .get(url)
         .then((response) => {
           if (response.status > 300) {
             reject(response);
@@ -36,11 +37,12 @@ class Darwin {
   post(xml) {
     const xmlWithToken = xml.replace('$$TOKEN$$', this.key);
     return new Promise((resolve, reject) => {
-      axios.post(this.baseUrl, xmlWithToken, {
-        headers: {
-          'Content-Type': 'text/xml',
-        },
-      })
+      axios
+        .post(this.baseUrl, xmlWithToken, {
+          headers: {
+            'Content-Type': 'text/xml',
+          },
+        })
         .then((response) => {
           if (response.status > 300) {
             reject(response);
@@ -54,7 +56,7 @@ class Darwin {
     });
   }
 
-  getDepartureBoard(station, options) {
+  getDepartureBoard(station, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getDepartureBoardRequest(station, options);
       this.post(requestXML)
@@ -67,7 +69,7 @@ class Darwin {
     });
   }
 
-  getDepartureBoardWithDetails(station, options) {
+  getDepartureBoardWithDetails(station, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getDepartureBoardWithDetails(station, options);
       this.post(requestXML)
@@ -80,7 +82,7 @@ class Darwin {
     });
   }
 
-  getArrivalsBoard(station, options) {
+  getArrivalsBoard(station, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getArrivalsBoard(station, options);
       this.post(requestXML)
@@ -93,7 +95,7 @@ class Darwin {
     });
   }
 
-  getArrivalsBoardWithDetails(station, options) {
+  getArrivalsBoardWithDetails(station, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getArrivalsBoardWithDetails(station, options);
       this.post(requestXML)
@@ -106,7 +108,7 @@ class Darwin {
     });
   }
 
-  getArrivalsDepartureBoard(station, options) {
+  getArrivalsDepartureBoard(station, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getArrivalsDepartureBoard(station, options);
       this.post(requestXML)
@@ -119,7 +121,7 @@ class Darwin {
     });
   }
 
-  getArrivalsDepartureBoardWithDetails(station, options) {
+  getArrivalsDepartureBoardWithDetails(station, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getArrivalsDepartureBoardWithDetails(station, options);
       this.post(requestXML)
@@ -145,7 +147,7 @@ class Darwin {
     });
   }
 
-  getNextDeparture(station, destination, options) {
+  getNextDeparture(station, destination, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getNextDeparture(station, destination, options);
       this.post(requestXML)
@@ -158,7 +160,7 @@ class Darwin {
     });
   }
 
-  getNextDepartureWithDetails(station, destination, options) {
+  getNextDepartureWithDetails(station, destination, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getNextDepartureWithDetails(station, destination, options);
       this.post(requestXML)
@@ -171,7 +173,7 @@ class Darwin {
     });
   }
 
-  getArrival(station, destination, options) {
+  getArrival(station, destination, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getArrival(station, destination, options);
       this.post(requestXML)
@@ -184,7 +186,7 @@ class Darwin {
     });
   }
 
-  getFastestDeparture(station, destination, options) {
+  getFastestDeparture(station, destination, options = {}) {
     return new Promise((resolve, reject) => {
       const requestXML = requestBuilder.getFastestDeparture(station, destination, options);
       this.post(requestXML)
@@ -197,13 +199,16 @@ class Darwin {
     });
   }
 
-  getFastestDepartureWithDetails(station, destination, options) {
+  getFastestDepartureWithDetails(station, destination, options = {}) {
     return new Promise((resolve, reject) => {
-      const requestXML = requestBuilder
-        .getFastestDepartureWithDetails(station, destination, options);
+      const requestXML = requestBuilder.getFastestDepartureWithDetails(
+        station,
+        destination,
+        options,
+      );
       this.post(requestXML)
         .then((result) => {
-          resolve(Parsers.parseFastestDeparturesWithDetail(result));
+          resolve(Parsers.parseFastestDepartureWithDetails(result));
         })
         .catch((err) => {
           reject(err);
@@ -213,7 +218,9 @@ class Darwin {
 
   static getStationDetails(stationName) {
     return new Promise((resolve, reject) => {
-      const url = `http://ojp.nationalrail.co.uk/find/stationsDLRLU/${encodeURIComponent(stationName)}`;
+      const url = `http://ojp.nationalrail.co.uk/find/stationsDLRLU/${encodeURIComponent(
+        stationName,
+      )}`;
       this.get(url)
         .then((body) => {
           const results = JSON.parse(body);
