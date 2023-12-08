@@ -3,7 +3,8 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
+  extends: ['airbnb-base'],
+  rules: {
+    'no-console': ['off'],
+  },
 };
