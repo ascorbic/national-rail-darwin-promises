@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetDepBoardWithDetailsResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+            <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types"
+                xmlns:lt8="http://thalesgroup.com/RTTI/2021-11-01/ldb/types"
+                xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+                xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types"
+                xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+                xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types"
+                xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+                xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                <lt4:generatedAt>2023-12-08T18:14:06.4172305+00:00</lt4:generatedAt>
+                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                <lt4:crs>BRI</lt4:crs>
+                <lt4:nrccMessages>
+                    <lt:message>Lines have reopened following yesterday's damage to the overhead electric wires near London Paddington. Trains may still be cancelled or delayed. More details can be found in &lt;a href="https://www.nationalrail.co.uk/service-disruptions/london-paddington-20231207/"&gt;Latest Travel News. &lt;/a&gt;</lt:message>
+                    <lt:message>
+    Due to heavy rain flooding the railway earlier today between Plymouth and Exeter St Davids trains may be cancelled, delayed or revised. More details can be found in &lt;a href="https://www.nationalrail.co.uk/service-disruptions/totnes-20231208/"&gt;Latest Travel News&lt;/a&gt;.</lt:message>
+                </lt4:nrccMessages>
+                <lt4:platformAvailable>true</lt4:platformAvailable>
+                <lt7:trainServices>
+                    <lt7:service>
+                        <lt4:std>17:57</lt4:std>
+                        <lt4:etd>18:14</lt4:etd>
+                        <lt4:platform>7</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2390247BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Portsmouth Harbour</lt4:locationName>
+                                <lt4:crs>PMH</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Cardiff Central</lt4:locationName>
+                                <lt4:crs>CDF</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Filton Abbey Wood</lt7:locationName>
+                                    <lt7:crs>FIT</lt7:crs>
+                                    <lt7:st>18:04</lt7:st>
+                                    <lt7:et>18:21</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Severn Tunnel Junction</lt7:locationName>
+                                    <lt7:crs>STJ</lt7:crs>
+                                    <lt7:st>18:21</lt7:st>
+                                    <lt7:et>18:33</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Newport (South Wales)</lt7:locationName>
+                                    <lt7:crs>NWP</lt7:crs>
+                                    <lt7:st>18:33</lt7:st>
+                                    <lt7:et>18:44</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Cardiff Central</lt7:locationName>
+                                    <lt7:crs>CDF</lt7:crs>
+                                    <lt7:st>18:46</lt7:st>
+                                    <lt7:et>18:56</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:04</lt4:std>
+                        <lt4:etd>Delayed</lt4:etd>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2391638BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Filton Abbey Wood</lt4:locationName>
+                                <lt4:crs>FIT</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Lawrence Hill</lt7:locationName>
+                                    <lt7:crs>LWH</lt7:crs>
+                                    <lt7:st>18:07</lt7:st>
+                                    <lt7:et>Delayed</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Stapleton Road</lt7:locationName>
+                                    <lt7:crs>SRD</lt7:crs>
+                                    <lt7:st>18:09</lt7:st>
+                                    <lt7:et>Delayed</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Filton Abbey Wood</lt7:locationName>
+                                    <lt7:crs>FIT</lt7:crs>
+                                    <lt7:st>18:17</lt7:st>
+                                    <lt7:et>Delayed</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:10</lt4:std>
+                        <lt4:etd>18:14</lt4:etd>
+                        <lt4:platform>11</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2387782BRSTLTM_</lt4:serviceID>
+                        <lt5:rsid>GW891000</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Weymouth</lt4:locationName>
+                                <lt4:crs>WEY</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Gloucester</lt4:locationName>
+                                <lt4:crs>GCR</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Filton Abbey Wood</lt7:locationName>
+                                    <lt7:crs>FIT</lt7:crs>
+                                    <lt7:st>18:17</lt7:st>
+                                    <lt7:et>18:20</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Bristol Parkway</lt7:locationName>
+                                    <lt7:crs>BPW</lt7:crs>
+                                    <lt7:st>18:21</lt7:st>
+                                    <lt7:et>18:24</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Yate</lt7:locationName>
+                                    <lt7:crs>YAE</lt7:crs>
+                                    <lt7:st>18:31</lt7:st>
+                                    <lt7:et>18:33</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Gloucester</lt7:locationName>
+                                    <lt7:crs>GCR</lt7:crs>
+                                    <lt7:st>19:03</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:12</lt4:std>
+                        <lt4:etd>Cancelled</lt4:etd>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of a shortage of train crew</lt4:cancelReason>
+                        <lt4:serviceID>2391955BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Avonmouth</lt4:locationName>
+                                <lt4:crs>AVN</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Lawrence Hill</lt7:locationName>
+                                    <lt7:crs>LWH</lt7:crs>
+                                    <lt7:st>18:15</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Stapleton Road</lt7:locationName>
+                                    <lt7:crs>SRD</lt7:crs>
+                                    <lt7:st>18:17</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Montpelier</lt7:locationName>
+                                    <lt7:crs>MTP</lt7:crs>
+                                    <lt7:st>18:21</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Redland</lt7:locationName>
+                                    <lt7:crs>RDA</lt7:crs>
+                                    <lt7:st>18:23</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Clifton Down</lt7:locationName>
+                                    <lt7:crs>CFN</lt7:crs>
+                                    <lt7:st>18:26</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Sea Mills</lt7:locationName>
+                                    <lt7:crs>SML</lt7:crs>
+                                    <lt7:st>18:31</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Shirehampton</lt7:locationName>
+                                    <lt7:crs>SHH</lt7:crs>
+                                    <lt7:st>18:34</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Portway Park and Ride</lt7:locationName>
+                                    <lt7:crs>PRI</lt7:crs>
+                                    <lt7:st>18:36</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Avonmouth</lt7:locationName>
+                                    <lt7:crs>AVN</lt7:crs>
+                                    <lt7:st>18:39</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:15</lt4:std>
+                        <lt4:etd>Cancelled</lt4:etd>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of industrial action</lt4:cancelReason>
+                        <lt4:serviceID>2386319BRSTLTM_</lt4:serviceID>
+                        <lt5:rsid>GW434500</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Taunton</lt4:locationName>
+                                <lt4:crs>TAU</lt4:crs>
+                                <lt4:via>via Weston-super-Mare</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt5:currentDestinations>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:currentDestinations>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Nailsea &amp; Backwell</lt7:locationName>
+                                    <lt7:crs>NLS</lt7:crs>
+                                    <lt7:st>18:24</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Yatton</lt7:locationName>
+                                    <lt7:crs>YAT</lt7:crs>
+                                    <lt7:st>18:29</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Worle</lt7:locationName>
+                                    <lt7:crs>WOR</lt7:crs>
+                                    <lt7:st>18:35</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Weston-super-Mare</lt7:locationName>
+                                    <lt7:crs>WSM</lt7:crs>
+                                    <lt7:st>18:42</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Highbridge &amp; Burnham</lt7:locationName>
+                                    <lt7:crs>HIG</lt7:crs>
+                                    <lt7:st>18:53</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Bridgwater</lt7:locationName>
+                                    <lt7:crs>BWT</lt7:crs>
+                                    <lt7:st>19:00</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Taunton</lt7:locationName>
+                                    <lt7:crs>TAU</lt7:crs>
+                                    <lt7:st>19:12</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:22</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>7</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2390255BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Cardiff Central</lt4:locationName>
+                                <lt4:crs>CDF</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Portsmouth Harbour</lt4:locationName>
+                                <lt4:crs>PMH</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Keynsham</lt7:locationName>
+                                    <lt7:crs>KYN</lt7:crs>
+                                    <lt7:st>18:28</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Bath Spa</lt7:locationName>
+                                    <lt7:crs>BTH</lt7:crs>
+                                    <lt7:st>18:36</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Bradford-on-Avon</lt7:locationName>
+                                    <lt7:crs>BOA</lt7:crs>
+                                    <lt7:st>18:50</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Trowbridge</lt7:locationName>
+                                    <lt7:crs>TRO</lt7:crs>
+                                    <lt7:st>18:56</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Westbury</lt7:locationName>
+                                    <lt7:crs>WSB</lt7:crs>
+                                    <lt7:st>19:04</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Warminster</lt7:locationName>
+                                    <lt7:crs>WMN</lt7:crs>
+                                    <lt7:st>19:12</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Salisbury</lt7:locationName>
+                                    <lt7:crs>SAL</lt7:crs>
+                                    <lt7:st>19:34</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Romsey</lt7:locationName>
+                                    <lt7:crs>ROM</lt7:crs>
+                                    <lt7:st>19:53</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Southampton Central</lt7:locationName>
+                                    <lt7:crs>SOU</lt7:crs>
+                                    <lt7:st>20:04</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Fareham</lt7:locationName>
+                                    <lt7:crs>FRM</lt7:crs>
+                                    <lt7:st>20:28</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Fratton</lt7:locationName>
+                                    <lt7:crs>FTN</lt7:crs>
+                                    <lt7:st>20:43</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Portsmouth &amp; Southsea</lt7:locationName>
+                                    <lt7:crs>PMS</lt7:crs>
+                                    <lt7:st>20:47</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Portsmouth Harbour</lt7:locationName>
+                                    <lt7:crs>PMH</lt7:crs>
+                                    <lt7:st>20:52</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:25</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>12</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2392780BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Avonmouth</lt4:locationName>
+                                <lt4:crs>AVN</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Weston-super-Mare</lt4:locationName>
+                                <lt4:crs>WSM</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Bedminster</lt7:locationName>
+                                    <lt7:crs>BMT</lt7:crs>
+                                    <lt7:st>18:28</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Parson Street</lt7:locationName>
+                                    <lt7:crs>PSN</lt7:crs>
+                                    <lt7:st>18:31</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Nailsea &amp; Backwell</lt7:locationName>
+                                    <lt7:crs>NLS</lt7:crs>
+                                    <lt7:st>18:39</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Yatton</lt7:locationName>
+                                    <lt7:crs>YAT</lt7:crs>
+                                    <lt7:st>18:44</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Worle</lt7:locationName>
+                                    <lt7:crs>WOR</lt7:crs>
+                                    <lt7:st>18:50</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Weston Milton</lt7:locationName>
+                                    <lt7:crs>WNM</lt7:crs>
+                                    <lt7:st>18:55</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Weston-super-Mare</lt7:locationName>
+                                    <lt7:crs>WSM</lt7:crs>
+                                    <lt7:st>19:00</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:27</lt4:std>
+                        <lt4:etd>Cancelled</lt4:etd>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of industrial action</lt4:cancelReason>
+                        <lt4:serviceID>2392493BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Taunton</lt4:locationName>
+                                <lt4:crs>TAU</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Cardiff Central</lt4:locationName>
+                                <lt4:crs>CDF</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Lawrence Hill</lt7:locationName>
+                                    <lt7:crs>LWH</lt7:crs>
+                                    <lt7:st>18:30</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Stapleton Road</lt7:locationName>
+                                    <lt7:crs>SRD</lt7:crs>
+                                    <lt7:st>18:34</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Filton Abbey Wood</lt7:locationName>
+                                    <lt7:crs>FIT</lt7:crs>
+                                    <lt7:st>18:39</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Patchway</lt7:locationName>
+                                    <lt7:crs>PWY</lt7:crs>
+                                    <lt7:st>18:45</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Severn Tunnel Junction</lt7:locationName>
+                                    <lt7:crs>STJ</lt7:crs>
+                                    <lt7:st>18:55</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Newport (South Wales)</lt7:locationName>
+                                    <lt7:crs>NWP</lt7:crs>
+                                    <lt7:st>19:10</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Cardiff Central</lt7:locationName>
+                                    <lt7:crs>CDF</lt7:crs>
+                                    <lt7:st>19:27</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:30</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>13</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2389832BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Swindon</lt4:locationName>
+                                <lt4:crs>SWI</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Bath Spa</lt7:locationName>
+                                    <lt7:crs>BTH</lt7:crs>
+                                    <lt7:st>18:42</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Chippenham</lt7:locationName>
+                                    <lt7:crs>CPM</lt7:crs>
+                                    <lt7:st>18:55</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Swindon</lt7:locationName>
+                                    <lt7:crs>SWI</lt7:crs>
+                                    <lt7:st>19:09</lt7:st>
+                                    <lt7:et>On time</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Didcot Parkway</lt7:locationName>
+                                    <lt7:crs>DID</lt7:crs>
+                                    <lt7:st>19:26</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Reading</lt7:locationName>
+                                    <lt7:crs>RDG</lt7:crs>
+                                    <lt7:st>19:39</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>London Paddington</lt7:locationName>
+                                    <lt7:crs>PAD</lt7:crs>
+                                    <lt7:st>20:09</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>18:45</lt4:std>
+                        <lt4:etd>Cancelled</lt4:etd>
+                        <lt4:operator>CrossCountry</lt4:operator>
+                        <lt4:operatorCode>XC</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of a shortage of train drivers</lt4:cancelReason>
+                        <lt4:serviceID>2389409BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Edinburgh</lt4:locationName>
+                                <lt4:crs>EDB</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Plymouth</lt4:locationName>
+                                <lt4:crs>PLY</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt5:currentOrigins>
+                            <lt4:location>
+                                <lt4:locationName>Newcastle</lt4:locationName>
+                                <lt4:crs>NCL</lt4:crs>
+                            </lt4:location>
+                        </lt5:currentOrigins>
+                        <lt5:currentDestinations>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:currentDestinations>
+                        <lt7:subsequentCallingPoints>
+                            <lt7:callingPointList>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Taunton</lt7:locationName>
+                                    <lt7:crs>TAU</lt7:crs>
+                                    <lt7:st>19:23</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Tiverton Parkway</lt7:locationName>
+                                    <lt7:crs>TVP</lt7:crs>
+                                    <lt7:st>19:35</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Exeter St Davids</lt7:locationName>
+                                    <lt7:crs>EXD</lt7:crs>
+                                    <lt7:st>19:50</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Newton Abbot</lt7:locationName>
+                                    <lt7:crs>NTA</lt7:crs>
+                                    <lt7:st>20:10</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Totnes</lt7:locationName>
+                                    <lt7:crs>TOT</lt7:crs>
+                                    <lt7:st>20:22</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                                <lt7:callingPoint>
+                                    <lt7:locationName>Plymouth</lt7:locationName>
+                                    <lt7:crs>PLY</lt7:crs>
+                                    <lt7:st>20:49</lt7:st>
+                                    <lt7:et>Cancelled</lt7:et>
+                                </lt7:callingPoint>
+                            </lt7:callingPointList>
+                        </lt7:subsequentCallingPoints>
+                    </lt7:service>
+                </lt7:trainServices>
+            </GetStationBoardResult>
+        </GetDepBoardWithDetailsResponse>
+    </soap:Body>
+</soap:Envelope>

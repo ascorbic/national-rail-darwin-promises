@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetArrivalDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+            <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types"
+                xmlns:lt8="http://thalesgroup.com/RTTI/2021-11-01/ldb/types"
+                xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+                xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types"
+                xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+                xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types"
+                xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+                xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                <lt4:generatedAt>2023-12-08T07:31:44.1620036+00:00</lt4:generatedAt>
+                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                <lt4:crs>BRI</lt4:crs>
+                <lt4:nrccMessages>
+                    <lt:message>Major disruption to / from London Paddington due to a damage to the overhead electric wires. Trains may be cancelled or severely delayed by at least 90 minutes. More details can be found in &lt;a href="https://www.nationalrail.co.uk/service-disruptions/london-paddington-20231207/"&gt;Latest Travel News. &lt;/a&gt;</lt:message>
+                    <lt:message>
+    Due to heavy rain flooding the railway between Plymouth and Exeter St Davids trains may be cancelled, delayed or revised. More details can be found in &lt;a href="https://www.nationalrail.co.uk/service-disruptions/totnes-20231208/"&gt;Latest Travel News&lt;/a&gt;.</lt:message>
+                </lt4:nrccMessages>
+                <lt4:platformAvailable>true</lt4:platformAvailable>
+                <lt7:trainServices>
+                    <lt7:service>
+                        <lt4:std>07:10</lt4:std>
+                        <lt4:etd>07:29</lt4:etd>
+                        <lt4:platform>8</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:delayReason>This train has been delayed by train crew being delayed by service disruption</lt4:delayReason>
+                        <lt4:serviceID>2391227BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Gloucester</lt4:locationName>
+                                <lt4:crs>GCR</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:28</lt4:sta>
+                        <lt4:eta>07:49</lt4:eta>
+                        <lt4:platform>13</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2392536BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Fratton</lt4:locationName>
+                                <lt4:crs>FTN</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:24</lt4:sta>
+                        <lt4:eta>On time</lt4:eta>
+                        <lt4:std>07:30</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>11</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2389786BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Weston-super-Mare</lt4:locationName>
+                                <lt4:crs>WSM</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:35</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>5</lt4:platform>
+                        <lt4:operator>CrossCountry</lt4:operator>
+                        <lt4:operatorCode>XC</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2394662BRSTLTM_</lt4:serviceID>
+                        <lt5:rsid>XC106000</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Edinburgh</lt4:locationName>
+                                <lt4:crs>EDB</lt4:crs>
+                                <lt4:via>via Leeds</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:36</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:std>07:38</lt4:std>
+                        <lt4:etd>Cancelled</lt4:etd>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of industrial action</lt4:cancelReason>
+                        <lt4:serviceID>2386331BRSTLTM_</lt4:serviceID>
+                        <lt5:rsid>GW430300</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Penzance</lt4:locationName>
+                                <lt4:crs>PNZ</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:40</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>10</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2391229BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Gloucester</lt4:locationName>
+                                <lt4:crs>GCR</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:40</lt4:std>
+                        <lt4:etd>07:52</lt4:etd>
+                        <lt4:platform>13</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2391105BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Westbury</lt4:locationName>
+                                <lt4:crs>WSB</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:45</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2391811BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Severn Beach</lt4:locationName>
+                                <lt4:crs>SVB</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:44</lt4:sta>
+                        <lt4:eta>On time</lt4:eta>
+                        <lt4:std>07:46</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>5</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2391828BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Taunton</lt4:locationName>
+                                <lt4:crs>TAU</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Severn Beach</lt4:locationName>
+                                <lt4:crs>SVB</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:49</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of industrial action</lt4:cancelReason>
+                        <lt4:serviceID>2391145BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Cardiff Central</lt4:locationName>
+                                <lt4:crs>CDF</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:48</lt4:sta>
+                        <lt4:eta>On time</lt4:eta>
+                        <lt4:std>07:52</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>10</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2391152BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Gloucester</lt4:locationName>
+                                <lt4:crs>GCR</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Totnes</lt4:locationName>
+                                <lt4:crs>TOT</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:48</lt4:sta>
+                        <lt4:eta>Cancelled</lt4:eta>
+                        <lt4:std>07:55</lt4:std>
+                        <lt4:etd>Cancelled</lt4:etd>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:isCancelled>true</lt4:isCancelled>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:cancelReason>This train has been cancelled because of industrial action</lt4:cancelReason>
+                        <lt4:serviceID>2390193BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Frome</lt4:locationName>
+                                <lt4:crs>FRO</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Cardiff Central</lt4:locationName>
+                                <lt4:crs>CDF</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:57</lt4:sta>
+                        <lt4:eta>08:02</lt4:eta>
+                        <lt4:platform>9</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2391598BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Filton Abbey Wood</lt4:locationName>
+                                <lt4:crs>FIT</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:58</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>3</lt4:platform>
+                        <lt4:operator>CrossCountry</lt4:operator>
+                        <lt4:operatorCode>XC</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2383453BRSTLTM_</lt4:serviceID>
+                        <lt5:rsid>XC402000</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                <lt4:crs>BRI</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                                <lt4:crs>MAN</lt4:crs>
+                                <lt4:via>via Stoke-on-Trent</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:sta>07:52</lt4:sta>
+                        <lt4:eta>On time</lt4:eta>
+                        <lt4:std>08:00</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>11</lt4:platform>
+                        <lt4:operator>Great Western Railway</lt4:operator>
+                        <lt4:operatorCode>GW</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2389788BRSTLTM_</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>Weston-super-Mare</lt4:locationName>
+                                <lt4:crs>WSM</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>London Paddington</lt4:locationName>
+                                <lt4:crs>PAD</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                </lt7:trainServices>
+            </GetStationBoardResult>
+        </GetArrivalDepartureBoardResponse>
+    </soap:Body>
+</soap:Envelope>

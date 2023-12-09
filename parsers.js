@@ -1,137 +1,74 @@
 const xmldoc = require('xmldoc');
 
+const SERVICE_STRING_FIELDS = new Set([
+  'sta',
+  'eta',
+  'std',
+  'etd',
+  'platform',
+  'operator',
+  'operatorCode',
+  'serviceType',
+  'cancelReason',
+  'delayReason',
+  'serviceID',
+  'length',
+  'rsid',
+  'crs',
+  'locationName',
+  'generatedAt',
+]);
+
+const SERVICE_BOOLEAN_FIELDS = new Set([
+  'isCircularRoute',
+  'isCancelled',
+  'filterLocationCancelled',
+  'detachFront',
+  'isReverseFormation',
+  'futureCancellation',
+  'futureDelay',
+]);
+
+const SERVICE_ARRAY_FIELDS = new Set([
+  'origin',
+  'destination',
+  'currentOrigins',
+  'currentDestinations',
+]);
+
 class Parsers {
   static parseArrivalsBoardResponse(soapResponse) {
-    const board = this.getTrainServicesBoard(soapResponse, 'GetArrivalBoardResponse');
-    const trains = [];
-
-    try {
-      board.eachChild((service) => {
-        trains.push(this.parseStandardService(service));
-      });
-    } catch (e) {
-      console.error(e);
-    }
-
-    return { trainServices: trains };
+    return this.getTrainServicesBoard(soapResponse, 'GetArrivalBoardResponse');
   }
 
   static parseArrivalsBoardWithDetails(soapResponse) {
-    const board = this.getTrainServicesBoard(soapResponse, 'GetArrBoardWithDetailsResponse');
-    const trains = [];
-
-    try {
-      board.eachChild((service) => {
-        const train = this.parseStandardService(service);
-        service.eachChild((element) => {
-          if (element.name === 'lt7:previousCallingPoints') {
-            const previousCallingPoints = element.childNamed('lt7:callingPointList');
-            train.previousCallingPoints = this.parseCallingPointList(previousCallingPoints);
-          }
-        });
-        trains.push(train);
-      });
-    } catch (e) {
-      console.error(e);
-    }
-
-    return { trainServices: trains };
+    return this.getTrainServicesBoard(soapResponse, 'GetArrBoardWithDetailsResponse');
   }
 
   static parseArrivalsDepartureBoard(soapResponse) {
-    const board = this.getTrainServicesBoard(soapResponse, 'GetArrivalDepartureBoardResponse');
-    const trains = [];
-
-    try {
-      board.eachChild((service) => {
-        trains.push(this.parseStandardService(service));
-      });
-    } catch (e) {
-      console.error(e);
-    }
-
-    return { trainServices: trains };
+    return this.getTrainServicesBoard(soapResponse, 'GetArrivalDepartureBoardResponse');
   }
 
   static parseArrivalsDepartureBoardWithDetails(soapResponse) {
-    const board = this.getTrainServicesBoard(soapResponse, 'GetArrDepBoardWithDetailsResponse');
-    const trains = [];
-
-    try {
-      board.eachChild((service) => {
-        const train = this.parseStandardService(service);
-        service.eachChild((element) => {
-          if (element.name === 'lt7:previousCallingPoints') {
-            const previousCallingPoints = element.childNamed('lt7:callingPointList');
-            train.previousCallingPoints = this.parseCallingPointList(previousCallingPoints);
-          } else if (element.name === 'lt7:subsequentCallingPoints') {
-            const subsequentCallingPoints = element.childNamed('lt7:callingPointList');
-            train.subsequentCallingPoints = this.parseCallingPointList(subsequentCallingPoints);
-          }
-        });
-        trains.push(train);
-      });
-    } catch (e) {
-      console.error(e);
-    }
-
-    return { trainServices: trains };
+    return this.getTrainServicesBoard(soapResponse, 'GetArrDepBoardWithDetailsResponse');
   }
 
   static parseServiceDetails(soapResponse) {
     const serviceXml = this.extractResponseObject(
       soapResponse,
-      'GetServiceDetailsResponse'
+      'GetServiceDetailsResponse',
     ).childNamed('GetServiceDetailsResult');
     const service = this.parseStandardService(serviceXml);
-    serviceXml.eachChild((element) => {
-      if (element.name === 'lt7:previousCallingPoints') {
-        const previousCallingPoints = element.childNamed('lt7:callingPointList');
-        service.previousCallingPoints = this.parseCallingPointList(previousCallingPoints);
-      }
-      if (element.name === 'lt7:subsequentCallingPoints') {
-        const subsequentCallingPoints = element.childNamed('lt7:callingPointList');
-        service.subsequentCallingPoints = this.parseCallingPointList(subsequentCallingPoints);
-      }
-    });
 
     return { serviceDetails: service };
   }
 
   static parseDepartureBoardResponse(soapResponse) {
-    const board = this.getTrainServicesBoard(soapResponse, 'GetDepartureBoardResponse');
-    const trains = [];
-    try {
-      board.eachChild((service) => {
-        trains.push(this.parseStandardService(service));
-      });
-    } catch (e) {
-      console.error(e);
-    }
-
-    return { trainServices: trains };
+    return this.getTrainServicesBoard(soapResponse, 'GetDepartureBoardResponse');
   }
 
   static parseDepartureBoardWithDetailsResponse(soapResponse) {
-    const board = this.getTrainServicesBoard(soapResponse, 'GetDepBoardWithDetailsResponse');
-    const trains = [];
-
-    try {
-      board.eachChild((service) => {
-        const train = this.parseStandardService(service);
-        service.eachChild((element) => {
-          if (element.name === 'lt7:subsequentCallingPoints') {
-            const subsequentCallingPoints = element.childNamed('lt7:callingPointList');
-            train.subsequentCallingPoints = this.parseCallingPointList(subsequentCallingPoints);
-          }
-        });
-        trains.push(train);
-      });
-    } catch (e) {
-      console.error(e);
-    }
-
-    return { trainServices: trains };
+    return this.getTrainServicesBoard(soapResponse, 'GetDepBoardWithDetailsResponse');
   }
 
   static parseNextDepartureResponse(response) {
@@ -152,20 +89,13 @@ class Parsers {
   static parseNextDepartureWithDetailsResponse(response) {
     const board = this.getDepartureBoardDestination(
       response,
-      'GetNextDeparturesWithDetailsResponse'
+      'GetNextDeparturesWithDetailsResponse',
     );
     const trains = [];
 
     try {
       board.eachChild((service) => {
-        const train = this.parseStandardService(service);
-        service.eachChild((element) => {
-          if (element.name === 'lt7:subsequentCallingPoints') {
-            const subsequentCallingPoints = element.childNamed('lt7:callingPointList');
-            train.subsequentCallingPoints = this.parseCallingPointList(subsequentCallingPoints);
-          }
-        });
-        trains.push(train);
+        trains.push(this.parseStandardService(service));
       });
     } catch (e) {
       console.error(e);
@@ -191,7 +121,7 @@ class Parsers {
   static parseFastestDepartureWithDetails(response) {
     const board = this.getDepartureBoardDestination(
       response,
-      'GetFastestDeparturesWithDetailsResponse'
+      'GetFastestDeparturesWithDetailsResponse',
     );
     const trains = [];
     try {
@@ -213,86 +143,96 @@ class Parsers {
   }
 
   static getTrainServicesBoard(response, responseType) {
-    const board = this.extractResponseObject(response, responseType)
-      .childNamed('GetStationBoardResult')
-      .childNamed('lt7:trainServices');
+    const boardElement = this.extractResponseObject(response, responseType).childNamed(
+      'GetStationBoardResult',
+    );
+    const board = {};
+    boardElement.eachChild((element) => {
+      const name = element.name.split(':')[1];
+      switch (name) {
+        case 'generatedAt':
+        case 'locationName':
+        case 'crs':
+          board[name] = element.val;
+          break;
+        case 'platformAvailable':
+          board.platformAvailable = element.val === 'true';
+          break;
+        case 'nrccMessages':
+          board.nrccMessages = element.childrenNamed('lt:message').map((message) => message.val);
+          break;
+        case 'trainServices':
+          try {
+            board.trainServices = [];
+            element.eachChild((service) => {
+              board.trainServices.push(this.parseStandardService(service));
+            });
+          } catch (e) {
+            console.error(e);
+          }
+          break;
+        default:
+          console.log('unknown board element', element.name);
+          break;
+      }
+    });
     return board;
+  }
+
+  static parseFormation(formation) {
+    const train = {};
+    formation.eachChild((element) => {
+      const name = element.name.split(':')[1];
+
+      switch (name) {
+        case 'coaches':
+          train.coaches = element.childrenNamed('lt7:coach').map((coach) => {
+            const coachData = {};
+            coachData.number = coach.attr.number;
+            coach.eachChild((el) => {
+              switch (el.name) {
+                case 'lt7:toilet':
+                  coachData.toilet = el.val;
+                  break;
+                case 'lt7:coachClass':
+                  coachData.class = el.val;
+                  break;
+                default:
+                  console.log('unknown coach element', el.name);
+                  break;
+              }
+            });
+            return coachData;
+          });
+          break;
+        case 'avgLoading':
+          train.avgLoading = element.val;
+          break;
+        default:
+          console.log('unknown formation element', element.name);
+          break;
+      }
+    });
+    return train;
   }
 
   static parseStandardService(service) {
     const train = {};
-    const s = service;
     service.eachChild((element) => {
-      let origin;
-      let destin;
-
-      switch (element.name) {
-        case 'lt4:generatedAt':
-        case 'lt7:generatedAt':
-          s.generatedAt = element.val;
-          break;
-        case 'lt4:std':
-        case 'lt7:std':
-          train.std = element.val;
-          break;
-        case 'lt4:etd':
-        case 'lt7:etd':
-          train.etd = element.val;
-          break;
-        case 'lt4:sta':
-        case 'lt7:sta':
-          train.sta = element.val;
-          break;
-        case 'lt4:eta':
-        case 'lt7:eta':
-          train.eta = element.val;
-          break;
-        case 'lt4:platform':
-        case 'lt7:platform':
-          train.platform = element.val;
-          break;
-        case 'lt4:delayReason':
-        case 'lt7:delayReason':
-          train.delayReason = element.val;
-          break;
-        case 'lt4:serviceID':
-        case 'lt7:serviceID':
-          train.serviceId = element.val;
-          break;
-        case 'lt4:length':
-        case 'lt7:length':
-          train.length = element.val;
-          break;
-        case 'lt4:operator':
-        case 'lt7:operator':
-          train.operator = element.val;
-          break;
-        case 'lt4:operatorCode':
-        case 'lt7:operatorCode':
-          train.operatorCode = element.val;
-          break;
-        case 'lt5:rsid':
-        case 'lt7:rsid':
-          train.rsid = element.val;
-          break;
-        case 'lt5:origin':
-        case 'lt7:origin':
-          origin = element.childrenNamed('lt4:location');
-          train.origin = [];
-          origin.forEach((loc) => {
-            train.origin.push(this.parseLocation(loc));
-          });
-          break;
-        case 'lt5:destination':
-        case 'lt7:destination':
-          destin = element.childrenNamed('lt4:location');
-          train.destination = [];
-          destin.forEach((loc) => {
-            train.destination.push(this.parseLocation(loc));
-          });
-          break;
-        default:
-          break;
+      const name = element.name.split(':')[1];
+      if (SERVICE_STRING_FIELDS.has(name)) {
+        train[name] = element.val;
+      } else if (SERVICE_BOOLEAN_FIELDS.has(name)) {
+        train[name] = element.val === 'true';
+      } else if (SERVICE_ARRAY_FIELDS.has(name)) {
+        train[name] = element.childrenNamed('lt4:location').map((loc) => this.parseLocation(loc));
+      } else if (name === 'formation') {
+        train[name] = this.parseFormation(element);
+      } else if (name === 'previousCallingPoints' || name === 'subsequentCallingPoints') {
+        const callingPoints = element.childNamed('lt7:callingPointList');
+        train[name] = this.parseCallingPointList(callingPoints);
+      } else {
+        console.log('unknown standard service element', element.name);
       }
     });
     return train;

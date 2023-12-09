@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+            <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types"
+                xmlns:lt8="http://thalesgroup.com/RTTI/2021-11-01/ldb/types"
+                xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+                xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types"
+                xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+                xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types"
+                xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+                xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                <lt4:generatedAt>2023-12-08T07:20:27.1211921+00:00</lt4:generatedAt>
+                <lt4:locationName>London Euston</lt4:locationName>
+                <lt4:crs>EUS</lt4:crs>
+                <lt4:nrccMessages>
+                    <lt:message>&lt;p&gt;
+Severe weather between Crianlarich and Oban / Mallaig means some lines are disrupted. More details can be found in &lt;a href="https://www.nationalrail.co.uk/service-disruptions/crianlarich-20231207/"&gt;Latest Travel News&lt;/a&gt;.&lt;/p&gt;</lt:message>
+                </lt4:nrccMessages>
+                <lt4:platformAvailable>true</lt4:platformAvailable>
+                <lt7:trainServices>
+                    <lt7:service>
+                        <lt4:std>07:23</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>12</lt4:platform>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2395130EUSTON__</lt4:serviceID>
+                        <lt5:rsid>LM200900</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Birmingham New Street</lt4:locationName>
+                                <lt4:crs>BHM</lt4:crs>
+                                <lt4:via>via Northampton</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="A1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="A2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:24</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>8</lt4:platform>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2396576EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Tring</lt4:locationName>
+                                <lt4:crs>TRI</lt4:crs>
+                                <lt4:via>via Watford Junction</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:28</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>9</lt4:platform>
+                        <lt4:operator>London Overground</lt4:operator>
+                        <lt4:operatorCode>LO</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2383445EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Watford Junction</lt4:locationName>
+                                <lt4:crs>WFJ</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:30</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>13</lt4:platform>
+                        <lt4:operator>Avanti West Coast</lt4:operator>
+                        <lt4:operatorCode>VT</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2403177EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Glasgow Central</lt4:locationName>
+                                <lt4:crs>GLC</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="5">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="6">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="7">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="8">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="9">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:33</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:platform>16</lt4:platform>
+                        <lt4:operator>Avanti West Coast</lt4:operator>
+                        <lt4:operatorCode>VT</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2403478EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                                <lt4:crs>MAN</lt4:crs>
+                                <lt4:via>via Wilmslow</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="5">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="6">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="7">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="8">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="9">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="10">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="11">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:34</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2396580EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Tring</lt4:locationName>
+                                <lt4:crs>TRI</lt4:crs>
+                                <lt4:via>via Watford Junction</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="A1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="A2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:39</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2395819EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Milton Keynes Central</lt4:locationName>
+                                <lt4:crs>MKC</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:43</lt4:std>
+                        <lt4:etd>07:45</lt4:etd>
+                        <lt4:operator>Avanti West Coast</lt4:operator>
+                        <lt4:operatorCode>VT</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2402944EUSTON__</lt4:serviceID>
+                        <lt5:rsid>VT806000</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Liverpool Lime Street</lt4:locationName>
+                                <lt4:crs>LIV</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="1">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="2">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="3">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="4">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="5">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="6">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="7">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="8">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="9">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="10">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="11">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:45</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>London Overground</lt4:operator>
+                        <lt4:operatorCode>LO</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2383450EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Watford Junction</lt4:locationName>
+                                <lt4:crs>WFJ</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:46</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2395046EUSTON__</lt4:serviceID>
+                        <lt5:rsid>LM101300</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Crewe</lt4:locationName>
+                                <lt4:crs>CRE</lt4:crs>
+                                <lt4:via>via Nuneaton &amp; Stafford</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="A1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="A2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:53</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>Avanti West Coast</lt4:operator>
+                        <lt4:operatorCode>VT</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2402975EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                                <lt4:crs>MAN</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="1">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="2">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="3">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="4">
+                                    <lt7:coachClass>First</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="5">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="6">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="7">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="8">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="9">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="10">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="11">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:54</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2396584EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Tring</lt4:locationName>
+                                <lt4:crs>TRI</lt4:crs>
+                                <lt4:via>via Watford Junction</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="A1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="A2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:56</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2384304EUSTON__</lt4:serviceID>
+                        <lt5:rsid>LM201300</lt5:rsid>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Birmingham New Street</lt4:locationName>
+                                <lt4:crs>BHM</lt4:crs>
+                                <lt4:via>via Northampton</lt4:via>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="A1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="A2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>07:58</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>London Overground</lt4:operator>
+                        <lt4:operatorCode>LO</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2383454EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Watford Junction</lt4:locationName>
+                                <lt4:crs>WFJ</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                    </lt7:service>
+                    <lt7:service>
+                        <lt4:std>08:09</lt4:std>
+                        <lt4:etd>On time</lt4:etd>
+                        <lt4:operator>West Midlands Trains</lt4:operator>
+                        <lt4:operatorCode>LM</lt4:operatorCode>
+                        <lt4:serviceType>train</lt4:serviceType>
+                        <lt4:serviceID>2395823EUSTON__</lt4:serviceID>
+                        <lt5:origin>
+                            <lt4:location>
+                                <lt4:locationName>London Euston</lt4:locationName>
+                                <lt4:crs>EUS</lt4:crs>
+                            </lt4:location>
+                        </lt5:origin>
+                        <lt5:destination>
+                            <lt4:location>
+                                <lt4:locationName>Milton Keynes Central</lt4:locationName>
+                                <lt4:crs>MKC</lt4:crs>
+                            </lt4:location>
+                        </lt5:destination>
+                        <lt7:formation>
+                            <lt7:coaches>
+                                <lt7:coach number="A1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="A2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="A4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B1">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                                <lt7:coach number="B2">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Accessible</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B3">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                    <lt7:toilet>Standard</lt7:toilet>
+                                </lt7:coach>
+                                <lt7:coach number="B4">
+                                    <lt7:coachClass>Standard</lt7:coachClass>
+                                </lt7:coach>
+                            </lt7:coaches>
+                        </lt7:formation>
+                    </lt7:service>
+                </lt7:trainServices>
+            </GetStationBoardResult>
+        </GetDepartureBoardResponse>
+    </soap:Body>
+</soap:Envelope>

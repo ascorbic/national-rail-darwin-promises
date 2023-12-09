@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetNextDeparturesResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+            <DeparturesBoard xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types"
+                xmlns:lt8="http://thalesgroup.com/RTTI/2021-11-01/ldb/types"
+                xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+                xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types"
+                xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+                xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types"
+                xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+                xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                <lt4:generatedAt>2023-12-08T18:32:56.1797822+00:00</lt4:generatedAt>
+                <lt4:locationName>Bath Spa</lt4:locationName>
+                <lt4:crs>BTH</lt4:crs>
+                <lt4:platformAvailable>true</lt4:platformAvailable>
+                <lt7:departures>
+                    <lt7:destination crs="SWI">
+                        <lt7:service>
+                            <lt4:sta>18:42</lt4:sta>
+                            <lt4:eta>On time</lt4:eta>
+                            <lt4:std>18:44</lt4:std>
+                            <lt4:etd>On time</lt4:etd>
+                            <lt4:platform>2</lt4:platform>
+                            <lt4:operator>Great Western Railway</lt4:operator>
+                            <lt4:operatorCode>GW</lt4:operatorCode>
+                            <lt4:serviceType>train</lt4:serviceType>
+                            <lt4:serviceID>2389832BATHSPA_</lt4:serviceID>
+                            <lt5:origin>
+                                <lt4:location>
+                                    <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                                    <lt4:crs>BRI</lt4:crs>
+                                </lt4:location>
+                            </lt5:origin>
+                            <lt5:destination>
+                                <lt4:location>
+                                    <lt4:locationName>Swindon</lt4:locationName>
+                                    <lt4:crs>SWI</lt4:crs>
+                                </lt4:location>
+                            </lt5:destination>
+                        </lt7:service>
+                    </lt7:destination>
+                </lt7:departures>
+            </DeparturesBoard>
+        </GetNextDeparturesResponse>
+    </soap:Body>
+</soap:Envelope>

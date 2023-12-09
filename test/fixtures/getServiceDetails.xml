@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <GetServiceDetailsResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+            <GetServiceDetailsResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types"
+                xmlns:lt8="http://thalesgroup.com/RTTI/2021-11-01/ldb/types"
+                xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+                xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types"
+                xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+                xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types"
+                xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+                xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+                <lt7:generatedAt>2023-12-08T18:39:32.6132052+00:00</lt7:generatedAt>
+                <lt7:serviceType>train</lt7:serviceType>
+                <lt7:locationName>Bath Spa</lt7:locationName>
+                <lt7:crs>BTH</lt7:crs>
+                <lt7:operator>Great Western Railway</lt7:operator>
+                <lt7:operatorCode>GW</lt7:operatorCode>
+                <lt7:platform>2</lt7:platform>
+                <lt7:sta>18:42</lt7:sta>
+                <lt7:eta>On time</lt7:eta>
+                <lt7:std>18:44</lt7:std>
+                <lt7:etd>On time</lt7:etd>
+                <lt7:previousCallingPoints>
+                    <lt7:callingPointList>
+                        <lt7:callingPoint>
+                            <lt7:locationName>Bristol Temple Meads</lt7:locationName>
+                            <lt7:crs>BRI</lt7:crs>
+                            <lt7:st>18:30</lt7:st>
+                            <lt7:at>On time</lt7:at>
+                        </lt7:callingPoint>
+                    </lt7:callingPointList>
+                </lt7:previousCallingPoints>
+                <lt7:subsequentCallingPoints>
+                    <lt7:callingPointList>
+                        <lt7:callingPoint>
+                            <lt7:locationName>Chippenham</lt7:locationName>
+                            <lt7:crs>CPM</lt7:crs>
+                            <lt7:st>18:55</lt7:st>
+                            <lt7:et>On time</lt7:et>
+                        </lt7:callingPoint>
+                        <lt7:callingPoint>
+                            <lt7:locationName>Swindon</lt7:locationName>
+                            <lt7:crs>SWI</lt7:crs>
+                            <lt7:st>19:09</lt7:st>
+                            <lt7:et>On time</lt7:et>
+                        </lt7:callingPoint>
+                        <lt7:callingPoint>
+                            <lt7:locationName>Didcot Parkway</lt7:locationName>
+                            <lt7:crs>DID</lt7:crs>
+                            <lt7:st>19:26</lt7:st>
+                            <lt7:et>Cancelled</lt7:et>
+                        </lt7:callingPoint>
+                        <lt7:callingPoint>
+                            <lt7:locationName>Reading</lt7:locationName>
+                            <lt7:crs>RDG</lt7:crs>
+                            <lt7:st>19:39</lt7:st>
+                            <lt7:et>Cancelled</lt7:et>
+                        </lt7:callingPoint>
+                        <lt7:callingPoint>
+                            <lt7:locationName>London Paddington</lt7:locationName>
+                            <lt7:crs>PAD</lt7:crs>
+                            <lt7:st>20:09</lt7:st>
+                            <lt7:et>Cancelled</lt7:et>
+                        </lt7:callingPoint>
+                    </lt7:callingPointList>
+                </lt7:subsequentCallingPoints>
+            </GetServiceDetailsResult>
+        </GetServiceDetailsResponse>
+    </soap:Body>
+</soap:Envelope>
