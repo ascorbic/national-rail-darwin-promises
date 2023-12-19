@@ -197,6 +197,9 @@ class Parsers {
                 case 'lt7:coachClass':
                   coachData.class = el.val;
                   break;
+                case 'lt7:loading':
+                  coachData.loading = el.val;
+                  break;
                 default:
                   console.log('unknown coach element', el.name);
                   break;

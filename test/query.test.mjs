@@ -10,9 +10,23 @@ describe('Darwin', (it) => {
   it('should return a list of departures', async () => {
     const response = await loadFixture('getDepartureBoard');
     const data = Parsers.parseDepartureBoardResponse(response);
-    expect(data.locationName).toBe('London Euston');
-    expect(data.crs).toBe('EUS');
+    expect(data.locationName).toBe('London Bridge');
+    expect(data.crs).toBe('LBG');
     expect(data.trainServices.length).toBeGreaterThan(0);
+  });
+
+  it('should parse different formation type', async () => {
+    const response = await loadFixture('getDepartureBoard');
+    const data = Parsers.parseDepartureBoardResponse(response);
+    expect(data.trainServices[1].length).toBe('8');
+    expect(data.trainServices[1].formation.coaches[0].loading).toBe('100');
+    const service = data.trainServices.find(
+      (s) => s.serviceID === '2721337LNDNBDC_',
+    );
+    expect(service.length).toBe('6');
+    expect(service.formation).toBeDefined();
+    expect(service.formation.coaches).not.toBeDefined();
+    expect(service.formation.avgLoading).toBe('13');
   });
 
   it('should return a list of arrivals', async () => {
